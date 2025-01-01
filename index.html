@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    * {
+      font-family: "Poppins", serif;
+    }
+    body {
+      height: 98vh;
+      width: 98vw;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      background-color: #676179;
+      /* align-items: center; */
+    }
+    .container {
+      width: 70vw;
+      height: 80vh;
+      margin-top: 6vh;
+      border: solid black 1px;
+      border-radius: 10px;
+      display: flex;
+      background-color: rgb(44, 38, 56);
+      box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2); /* Shadow all around */
+    }
+    #box1 {
+      width: 50%;
+      /* border: solid black 1px; */
+    }
+    #box2 {
+      width: 50%;
+      /* border: solid black 1px; */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    #Create {
+      font-family: "Poppins", serif;
+      font-weight: 500;
+      font-style: normal;
+      font-size: 40px;
+      position: relative;
+      /* top: 5vh; */
+      color: white;
+    }
+    #Already {
+      font-family: "Poppins", serif;
+      font-weight: 500;
+      font-style: normal;
+      font-size: 15px;
+      color: grey;
+      position: relative;
+      margin-top: 3vh;
+      /* right: 3.5vw; */
+    }
+    a {
+      color: #8475af;
+    }
+    .name {
+      /* margin-left: 2vw; */
+      margin-top: 4vh;
+      /* border: solid red 1px; */
+    }
+    .namein {
+      border-radius: 7px;
+      outline: none;
+      border: none;
+      height: 40px;
+      width: 43%;
+      padding: 4px;
+      padding-left: 20px;
+      background-color: rgb(59, 54, 76);
+      color: white;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    .namein:focus {
+      outline: none;
+      border: solid 1px rgb(140 125 183);
+    }
+    .namein:nth-child(1) {
+      margin-right: 10px;
+    }
+
+    .emailin {
+      border-radius: 7px;
+      outline: none;
+      border: none;
+      height: 40px;
+      width: 94.7%;
+      /* width: 23.5vw; */
+      padding: 7px;
+      padding-left: 20px;
+      background-color: rgb(59, 54, 76);
+      color: white;
+      font-size: 20px;
+      margin-top: 20px;
+      /* margin-left: 40px; */
+      margin-bottom: 10px;
+    }
+    .emailin:focus {
+      outline: none;
+      border: solid 1px rgb(140 125 183);
+    }
+    #terms {
+      text-decoration: underline;
+    }
+    .check {
+      display: flex;
+    }
+    #chin {
+      margin-right: 10px;
+      transform: scale(1.5);
+    }
+    .innerbox1 {
+      /* border: solid red 1px; */
+      /* height: 80%; */
+      height: max-content;
+      width: 80%;
+    }
+    .check p {
+      color: white;
+    }
+    .check a {
+      margin-left: 10px;
+    }
+    .Createbtn {
+      /* border: solid red 1px; */
+      margin-top: 25px;
+    }
+    .Createbtn button {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      height: 6vh;
+      font-size: 17px;
+      background-color: #6e54b5;
+      border: none;
+      color: white;
+      /* letter-spacing: 1px; */
+      border-radius: 5px;
+    }
+    .seprate {
+      display: flex;
+    }
+    .seprate p {
+      color: grey;
+      padding: 0;
+      /* border: solid red 1px; */
+    }
+    .seprate hr {
+      height: 0;
+      margin-top: 5%;
+      width: 150px;
+    }
+    .btns {
+      display: flex;
+      height: 80px;
+      align-items: center;
+      justify-content: space-around;
+    }
+    .btns button {
+      width: 40%;
+      height: 70%;
+      background-color: transparent;
+      color: white;
+      border: white solid 1px;
+      border-radius: 5px;
+    }
+    .btns button:hover {
+      background-color: #6e54b5;
+    }
+    #box1 {
+      /* border: solid red 1px; */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #box1 img {
+      /* border: solid black 1px; */
+      border-radius: 10px;
+      /* width: max-content; */
+      width: 80%;
+      height: 90%;
+      object-fit: cover;
+      /* object-fit: contain; */
+      /* object-fit: cover; */
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div id="box1">
+        <img src="Create.png" alt="" />
+      </div>
+      <div id="box2">
+        <div class="innerbox1">
+          <h1 id="Create">Create an account</h1>
+          <p id="Already">
+            Already have an account? <a href="Login.html">Log in</a>
+          </p>
+          <div class="name">
+            <input
+              type="text"
+              class="namein"
+              placeholder="First name"
+              id="first"
+            />
+            <input
+              type="text"
+              class="namein"
+              placeholder="Last name"
+              id="last"
+            />
+          </div>
+          <div class="email">
+            <input
+              type="email"
+              name=""
+              placeholder="Email"
+              class="emailin"
+              id="email"
+            />
+          </div>
+          <div class="pass">
+            <input
+              type="password"
+              name=""
+              placeholder="Password"
+              id="pass"
+              class="emailin"
+            />
+            <!-- <button></button> -->
+          </div>
+          <div class="check">
+            <input type="checkbox" name="" id="chin" />
+            <p>I agree to the<a id="terms">Terms and Conditions</a></p>
+          </div>
+          <div class="Createbtn">
+            <button onclick="add()">Create Account</button>
+          </div>
+          <div class="seprate">
+            <hr id="hr1" />
+            <p>Or register with</p>
+            <hr id="hr2" />
+          </div>
+          <div class="btns">
+            <button>Google</button>
+            <button>Apple</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    const add = () => {
+      let firstname = document.getElementById("first").value;
+      let lastname = document.getElementById("last").value;
+      let email = document.getElementById("email").value;
+      let pass = document.getElementById("pass").value;
+      let chin = document.getElementById("chin");
+      if (firstname.length <= 2) {
+        alert("First Name is  too Short");
+        return 1;
+      } else if (!chin.checked) {
+        alert("Please Agree to the agreement");
+        return;
+      } else if (lastname.length <= 2) {
+        alert("Last Name is  too Short");
+        return 1;
+      } else if (email.length <= 2) {
+        alert("Enter Valid email");
+        return 1;
+      } else if (pass.length <= 2) {
+        alert("Password too Short");
+        return 1;
+      }
+      if (localStorage.getItem(email)) {
+        alert("Email Already in  Use");
+        window.location.href = "Login.html";
+      } else {
+        const userData = {
+          firstname: firstname,
+          lastname: lastname,
+          email: email,
+          password: pass,
+        };
+
+        localStorage.setItem(email, JSON.stringify(userData));
+        alert("Account Created Successfully");
+        window.location.href="Login.html"
+      }
+    };
+  </script>
+</html>

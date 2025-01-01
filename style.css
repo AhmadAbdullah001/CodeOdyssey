@@ -1,0 +1,1840 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+  }
+  *
+  {
+    font-family: "Poppins", serif;
+  }
+  .container {
+    /* border: solid red 1px; */
+    /* border: solid red 1px; */
+    background-color: rgb(240, 238, 245);
+    /* color: red; */
+    width: 99vw;
+    height: 98vh;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .nav {
+    /* border: solid red 1px; */
+    height: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+  }
+  .Logo {
+    /* border: solid red 1px; */
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  #logo {                   
+    font-size: 40px;
+  }
+  #profile {
+    height: 80px;
+    width: 80px;
+    padding: 0;
+    margin: 0;
+    border-radius: 100px;
+    overflow: hidden;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #profile img {
+    
+    object-fit: cover;
+    height: 100px;
+    width: 100px;
+  }
+  .input-container {
+    position: relative;
+    /* width: 300px; */
+    width: max-content;
+    left: 8vw;
+    margin-right: 10vw;
+    /* border: solid red 1px; */
+  }
+
+  .nav .input-container svg {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    height: 20px;
+    width: 20px;
+  }
+  a
+  {
+    text-decoration: none;
+  }
+  .nav .input-container input {
+    background-color: rgb(240, 238, 245);
+    border-radius: 25px;
+    width: 25vw;
+    height: 5vh;
+    border: none;
+    padding: 0 10px 0 40px; /* Add left padding for space after the SVG */
+    font-size: 16px;
+    border-radius: 100px;
+  }
+  .nav .input-container input:focus {
+    outline: none;
+  }
+  .nav .input-container input::placeholder {
+    color: #999;
+    font-size: 14px;
+  }
+  .Create {
+    /* border: solid red 1px; */
+    width: 20vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .Create #btn {
+    width: 6vw;
+    /* border: solid red 1px; */
+    height: 4vh;
+    border-radius: 100px;
+    border: none;
+    background-color: #6a4adf;
+    color: white;
+  }
+  .part2
+  {
+    /* border: solid red 4px; */
+    height: 88vh;
+    display: flex;
+    justify-content: space-around;
+  }
+  .box1
+  {
+      /* border: solid red 1px; */
+      width: 17%; 
+      margin-left: 50px;
+  }
+  .part2 .box1 .onep
+  {
+      /* border: solid red  1px; */
+      margin-top: 30px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      background-color: white;
+      padding: 10px;
+      /* justify-content: space-evenly; */
+  }
+  /* /HERE */
+  .part2 .box1 .onep img
+  {
+      height: 50px;
+      width: 50px;
+      border-radius: 100px;
+      margin-right: 20px;
+      margin-left: 20px;
+  }
+  .part2 .box1 .onep p:nth-child(2)
+  {
+    color: grey;
+    font-size: 15px;
+  }
+  .part2 .box1 .onep p
+  {
+    font-weight: 700;
+    line-height: 5px;
+    /* border: solid red 1px; */
+  }
+  .part2 .box1 .two
+  {
+    /* border: solid red 1px; */
+    margin-top: 20px;
+    height: 87%;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  .part2 .box1 .two .box
+  {
+    /* border: solid red 1px; */
+    display: flex;
+    background-color: white;
+    color: black;
+    align-items: center;
+    /* height: 7vh; */
+
+  }
+  .part2 .box1 .two .box svg
+  {
+    fill: #999;
+    margin-left: 10px;
+    margin-right: 20px;
+  }
+  .part2 .box1 .two .box p
+  {
+    position: relative;
+    /* display: none; */
+    top: 3px;
+  }
+  .part2 .box1 .two .box:hover
+  {
+    color: #6a4adf;
+    background-color: transparent;
+    /* border-left: 10px solid #6a4adf; */
+    cursor: pointer;
+  }
+  .part2 .box1 .two .box:hover svg
+  {
+    fill: #6a4adf;
+  }
+  #sb svg
+  {
+      fill: #6a4adf;
+  }
+  #sb
+  {
+    color: #6a4adf;
+    background-color: transparent;
+    border-left: 10px solid #6a4adf;
+  }
+  .box2
+  {
+      /* border: solid red 1px; */
+      width: 45%; 
+      position: relative;
+      top: 2vh;
+      overflow-y: scroll;
+      overflow-x: hidden;
+  }
+  .box2 .story 
+  {
+    /* border: solid red 1px; */
+    position: relative;
+    top: 10px;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+  }
+  .box2 .story .sbox {
+    width: 16%;
+    height: 100%;
+    /* margin-top: 10px; */
+    margin-left: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    flex-shrink: 0;
+    }
+  .box2 .story .sbox:nth-child(1)
+  {
+    background-image: url(P1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .box2 .story .sbox:nth-child(2)
+  {
+    background-image: url(P2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .box2 .story .sbox:nth-child(3)
+  {
+    background-image: url(P3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+  }
+  .box2 .story .sbox:nth-child(4)
+  {
+    background-image: url(P4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+  }
+  .box2 .story .sbox:nth-child(5)
+  {
+    background-image: url(P5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+  }
+  .box2 .story .sbox:nth-child(6)
+  {
+    background-image: url(P6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .box2 .story .sbox:nth-child(7)
+  {
+    background-image: url(P1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .box2 .story .sbox:nth-child(8)
+  {
+    background-image: url(P2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .box2 .story .sbox button
+  {
+        width: 50px;
+        height: 50px;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        border: solid 3px #6a4adf;
+        margin-top: 10px;
+        margin-left: 10px;
+        border-radius: 100px;
+  }
+  .box2 .story .sbox button img
+  {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .box2 .add
+  {
+    /* border: solid red 1px; */
+    margin-top: 3vh;
+    height: 6vh;
+    border-radius: 100px;
+    background-color: white;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+  }
+  .box2 .add .P1 img
+  {
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    margin-top: 4px;
+    /* border: solid red 1px; */
+    border-radius: 100px;
+  }
+  .box2 .add .P1
+  {
+    display: flex;
+    /* border: solid red 1px; */
+    overflow: hidden;
+  }
+  .box2 .add .P1 input
+  {
+    color: grey;
+    width:30vw ;
+    margin-left: 20px;
+    border: none;
+  }
+  .box2 .add .P1 input:focus
+  {
+    outline: none;
+  }
+  .box2 .add .P2 button
+  {
+    background-color: #6a4adf;
+    color: white;
+    border: none;
+    width: 100px;
+    height: 40px;
+    border-radius: 100px;
+    margin-right: 10px;
+  }
+
+  .post .one
+  {
+      /* border: solid red 1px; */
+      /* margin-top: 30px; */
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      background-color: white;
+      padding: 10px;
+      /* justify-content: space-evenly; */
+  }
+  .post .one img:nth-child(1)
+  {
+      height: 50px;
+      width: 50px;
+      border-radius: 100px;
+      margin-right: 20px;
+      margin-left: 20px;
+      object-fit: cover;
+  }
+  .post .one p:nth-child(2)
+  {
+    color: grey;
+    font-size: 15px;
+  }
+  .post .one p
+  {
+    font-weight: 700;
+    line-height: 5px;
+    /* border: solid red 1px; */
+  }
+  .post 
+  {
+    /* border: solid red 1px; */
+    /* height: 65vh; */
+    height: max-content;
+    margin-top: 2vh;
+    border-radius: 20px;
+    background-color: white;
+  }
+  #postimg
+  {
+    width: 95%;
+    height: 83%;
+    margin-top: 10px;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+  .posts
+  {
+    /* border: solid red 1px; */
+    /* height: 70vh; */
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .imgdiv
+  {
+    /* border: solid red   1px; */
+    display: flex;
+    position: relative;
+    bottom: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  .postbtns
+  {
+    display: flex;
+    /* border: solid red 1px; */
+    /* width: 7vw; */
+    justify-content: space-between;
+    margin-left: 20px;
+  }
+  .postbtns div
+  {
+    /* border: solid red 1px; */
+    width: 8vw;
+    display: flex;
+    justify-content: space-around;
+  }
+  .save 
+  {
+    position: relative;
+    left: 2vw;
+  }
+  .posts .comments
+  {
+    /* border: solid red 1px; */
+    height: 3vh;
+    padding: 0;
+    margin-top: 8px;
+    display: flex;
+  }
+  .comments .CP1 img
+  {
+    height: 30px;
+    width: 30px;
+    margin: 0;
+    position: absolute;
+    object-fit: cover;
+    /* border: solid red 1px; */
+    border-radius: 100px;
+  }
+  
+  .comments .CP1 img:nth-child(3)
+  {
+    left: 70px;
+  }
+  .comments .CP1 img:nth-child(2)
+  {
+    left: 50px;
+  }
+  .CP1
+  {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+  }
+  .CP2
+  {
+    margin-left: 5vw;
+    display: flex;
+    align-items: center;
+  }
+  .caption
+  {
+    /* border: solid red 1px; */
+    height: 10px;
+    display: flex;
+    align-items: center;
+    width: max-content;
+    margin-left: 6.5vw;
+    margin-bottom: 10px;
+  }
+  .caption p
+  {
+    font-size: 12px;
+    color: grey;
+  }
+    .box3
+  {
+      /* border: solid red 1px; */
+      width: 25%; 
+      display: flex;
+      flex-direction: column;
+  }
+  .box3 .messages
+  {
+    /* border: solid red 1px; */
+    height: 50%;
+    width: 90%;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: white;
+  }
+  .box3 .messages .head
+  {
+    /* border: solid reds 1px; */
+    display: flex;
+    justify-content: space-between;
+  }
+  .box3 .messages .head p
+  {
+    margin-left: 20px;
+  }
+  .box3 .messages .head svg
+  {
+    margin-right: 20px;
+  }
+  .box3 .messages .head button
+  {
+    border: none;
+    background-color: white;
+  }
+  .msgin
+  {
+    /* border: solid red 1px; */
+    width: 90%;
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+  }
+  .msgin input
+  {
+    background-color: rgb(240, 238, 245);
+    border-radius: 25px;
+    width: 90%;
+    height: 5vh;
+    border: none;
+    padding: 0 10px 0 50px;
+    font-size: 16px;
+    border-radius: 100px;
+  }
+  .msgin svg
+  {
+    position: absolute;
+    right: 23.8vw;
+    /* top: 50%;
+    transform: translateY(-50%);
+    height: 20px;
+    width: 20px; */
+  }
+  .msgin input:focus
+  {
+    outline: none;
+  }
+  .msgin input::placeholder
+  {
+    color: #999;
+    font-size: 14px;
+  }
+  .box3 .headings
+  {
+    border-bottom: solid #efeff1 5px;
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 2vh;
+    margin-left: 20px;
+    margin-top: 20px;
+    padding-bottom: 10px;
+
+  }
+  .box3 .headings p
+  {
+    height: max-content;
+    position: relative;
+  }
+  .box3 .headings p:nth-child(1)
+  {
+    top: 10px;
+    margin-right: 10px;
+    border-bottom: solid black 5px;
+  }
+  .box3 .headings p:nth-child(2)
+  {
+    /* border-bottom: solid grey 5px; */
+    top: 8px;
+    color: #999;
+    margin-right: 10px;
+  }
+  .box3 .headings p:nth-child(3)
+  {
+    /* border-bottom: solid grey 5px; */
+    top: 8px;
+    color: #6a4adf;
+  }
+  .box3 .one
+  {
+      /* border: solid red 1px; */
+      /* margin-top: 30px; */
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      background-color: white;
+      padding: 10px;
+      height: 5vh;
+      /* justify-content: space-evenly; */
+  }
+  .box3 .one img
+  {
+      height: 50px;
+      width: 50px;
+      border-radius: 100px;
+      margin-right: 20px;
+      object-fit: cover;
+      /* margin-left: 20px; */
+  }
+  .box3 .one p:nth-child(2)
+  {
+    color: #CAC9CC;
+    font-size: 12px;
+  }
+  .box3 .one p
+  {
+    font-weight: 700;
+    line-height: 5px;
+    width: max-content;
+  }
+  .box3 .chats button
+  {
+    display: flex ;
+    height: 8vh;
+    width: 90%;
+    border: none;
+    margin-top:5px;
+    background-color: transparent;
+  }
+  .box3 .chats
+  {
+      display: flex;
+      height: 50vh;
+      flex-direction: column;
+      align-items: center;
+      overflow-y: scroll;
+      width: 105%;
+      /* border: solid red 1px; */
+  }
+  .box3 .messages
+  {
+    overflow: hidden;
+    height: 130vh;
+  }
+  .box3 .chats .chat
+  {
+    width: 100%;
+  }
+  /* .box3 .chats ::-webkit-scrollbar
+  {
+    width: 1px;
+  } */
+*::-webkit-scrollbar {
+  width: 5px;
+  padding: 0;
+  background-color: wheat;
+}
+
+*::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: transparent; 
+  border-radius: 10px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: transparent;
+}
+.Requests
+{
+  /* border: solid red 1px; */
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+  /* border: solid red 1px; */
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: center; */
+}
+#RP
+{
+  color: grey;
+  margin: 0;
+  font-weight: 600;
+  height: max-content;
+  /* margin-top: 20px; */
+  /* margin-bottom: 20px; */
+  /* position: fixed; */
+  /* padding: 20px; */
+}
+.Req
+{
+  /* border: solid red 1px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: max-content;
+  width: 90%;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background-color: white;
+}
+.Requests .oned
+  {
+      /* border: solid red 1px; */
+      width: 80%;
+      /* margin-top: 30px; */
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      background-color: white;
+      /* padding: 10px; */
+  }
+  .Requests .oned img
+  {
+      height: 50px;
+      width: 50px;
+      border-radius: 100px;
+      margin-right: 20px;
+      margin-left: -24px;
+  }
+  .Requests .oned p:nth-child(2)
+  {
+    color: grey;
+    margin-top: 10px;
+    font-size: 15px;
+  }
+  .Requests .oned p
+  {
+    color: black;
+    font-weight: 700;
+    
+    line-height: 5px;
+    /* border: solid red 1px; */
+  }
+  .Req button
+  {
+    margin-bottom: 10px;
+    width: 45%;
+    padding: 0;
+    font-size: 15px;
+    border: none;
+    height: 40px;
+    margin-top: 10px;
+    border-radius: 50px;
+  }
+  .Req button:nth-child(1)
+  {
+    background-color: lightgreen;
+  }
+  .Req button:nth-child(2)
+  {
+    background-color: rgb(252, 95, 95);
+    border: #efeff1 solid 1px;
+    color: white;
+  }
+  .Req button:nth-child(1):hover
+  {
+    background-color: rgb(95, 252, 95);
+    transform: scale(1.01);
+    
+  }
+  .Req button:nth-child(2):hover
+  {
+    background-color: rgb(253, 60, 60);
+    transform: scale(1.01);
+  }
+  .box2 .Caught
+  {
+    /* border: solid red 1px; */
+    height: 10vh;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .Caught p
+  {
+    font-size: 20px;
+    margin-left: 30px;
+    /* border: solid red 1px; */
+  }
+  #msg_card
+  {
+    position: absolute;
+    height: 98vh;
+    width: 99vw;
+    /* border: solid red 1px; */
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* display: none; */
+    visibility: hidden;
+    background-color: rgb(255, 255, 255,0.5);
+  }
+  #msg_card .card
+  {
+    /* border: solid red 1px; */
+    width: 40%;
+    height: 80%;
+    /* top: 10vh;
+    left: 10px; */
+    background-color: white ;
+  }
+  #msg_card .card .close  
+  {
+    /* border: solid red 1px; */
+    display: flex;
+    justify-content: end;
+    background-color: #CAC9CC;
+  }
+  #msg_card .card .close button  
+  {
+    margin-top: 10px;
+    margin-right: 10px;
+    height: 40px;
+    width: 40px;
+    border-radius: 100px;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    padding: 0;
+  }
+  #msg_card .card .close button svg:hover
+  {
+    transform: scale(1.2);
+  }
+  #msg_card .card .head
+  {
+    display: flex;
+    /* margin-top: 10px; */
+    justify-content: space-between;
+    background-color: #CAC9CC;
+    /* border-bottom: red solid 1px; */
+    /* border-top: red solid 1px; */
+    padding: 2px;
+    padding-bottom: 20px;
+  }
+  #msg_card .card .head .P2
+  {
+    /* border: solid red 1px; */
+    width: 100px;
+    margin-top: 20px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    height: fit-content;
+  }
+  #msg_card .card .head div
+  {
+    display: flex;
+  }
+  #msg_card .card .head img
+  {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 100px;
+    margin-left: 40px;
+    margin-right: 30px;
+  }
+  #msg_card .card .head p
+  {
+    font-size: 20px;
+  }
+  #msg_card #messages
+  {
+    display: flex;
+    /* border: solid red 1px; */
+    flex-direction: column;
+    height: 70%;
+    overflow-y: scroll;
+    /* justify-content: space-between; */
+  }
+  #msg_card #messages div
+  {
+    /* border: solid red 1px; */
+    width: 100%;
+    height: max-content;
+    padding: 0;
+  }
+  #user
+  {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+  #bot
+  {
+    display: flex;
+    flex-direction: column;
+    /* border: solid red 1px; */
+
+  }
+  #user p
+  {
+    /* border: solid red 1px; */
+    width: max-content;
+    margin-right: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 10px;
+    background-color: #6a4adf;
+    color: white;
+  }
+  #bot p
+  {
+    /* border: solid red 1px; */
+    width: max-content;
+    margin-left: 50px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 10px;
+    background-color: #6a4adf;
+    color: white;
+  }
+  #bot img
+  {
+       width: 40px;
+       height: 40px;
+       position: relative;
+       top: 30px;
+       border-radius: 100px;
+       /* border: solid red 1px; */
+       padding: 0;
+       object-fit: cover;
+      }
+  #msg_card .write
+  {
+    /* border: solid red 1px; */
+    position: absolute;
+    top:82vh;
+    width: 39.5%;
+    display: flex;
+  }
+  #msg_card .write input
+  {
+    width: 100%;
+    height: 5vh;
+    border:solid 1px #999;
+    padding-left: 10px;
+  }
+  #msg_card .write input:focus
+  {
+    outline: none;
+  }
+  #msg_card .write button
+  {
+    border: none;
+    background-color: white;
+  }
+  #messages center p
+  {
+    color: #999;
+  }
+  .part2 .two #Noti p:nth-child(1)
+  {
+    /* border: solid red 1px; */
+    width: 18px;
+    height: 18px;
+    font-size: 12px;
+    background-color: red;
+    color: white;
+    border-radius: 100px;
+    z-index: 1;
+    top:38.5vh;
+    left: 8.4vw;
+    position: absolute;
+  }
+  #ncards
+  {
+    position: absolute;
+    height: 98vh;
+    width: 99vw;
+    /* border: solid red 1px; */
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* display: none; */
+    visibility: hidden;
+    background-color: rgb(255, 255, 255,0.5);
+  }
+  #ncard .notis
+  {
+    display: flex;
+    height: 100%;
+    overflow-y: scroll;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  #ncards #ncard
+  {
+    /* border: solid red 1px; */
+    overflow-y: scroll;
+    width: 30vw;
+    height: 70vh;
+    background-color: white;
+    position: relative;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  #ncard .close  
+  {
+    /* border: solid red 1px; */
+    display: flex;
+    color: white;
+    justify-content: space-evenly;
+    height: 5.5vh;
+    background-color: #6a4adf;
+    }
+    #ncard .close p
+    {
+      margin-left: 8.2vw;
+      font-size: 20px;
+      margin-top: 10px;
+    }
+    #ncard .close svg
+    {
+      margin-left: 4.5vw;
+      background-color: white;
+      border-radius: 100px;
+      padding: 4px;
+    }
+  #ncard .close button  
+  {
+    margin-top: 10px;
+    margin-right: 10px;
+    height: 40px;
+    width: 40px;
+    border-radius: 100px;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    padding: 0;
+  }
+  #ncard .close button svg:hover
+  {
+    transform: scale(1.2);
+  }
+  #ncard .head
+  {
+    /* border: solid transparent 1px; */
+    height: 10px;
+    padding: none;
+    
+    position: absolute;
+    top: 15px;
+    left: 20vh;
+    color: white;
+  }
+  #ncard .head p
+  {
+    /* border: solid red 2px; */
+    font-size: 30px;
+    font-weight: 400;
+  }
+  #ncards .Not
+  {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  #ncards .Not img
+  {
+     /* border: solid red 1px; */
+     height: 60px;
+     width: 60px;
+     border-radius: 100px;
+     object-fit: cover;
+  }
+  #ncards .Not .details p:nth-child(1)
+  {
+    margin: 0;
+    padding: 0;
+  }
+  #ncards .Not .details p:nth-child(2)
+  {
+    margin: 0;
+    padding: 0;
+    color: #989799;
+    /* font-size: ; */
+  }
+  .UnLiked
+  {
+    position: absolute;
+    left: 32px;
+    visibility: hidden;
+  }
+  .setting
+  {
+    position: absolute;
+    height: 98vh;
+    width: 99vw;
+    /* border: solid red 1px; */
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* display: none; */
+    visibility: hidden;
+    background-color: rgb(255, 255, 255,0.5);
+  }
+  .setting .setting_card
+  {
+    /* border: solid red 1px; */
+    overflow-y: scroll;
+    width: 30vw;
+    /* height: 60vh; */
+    height: max-content;
+    background-color: white;
+    position: relative;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  .setting_card .close  
+  {
+    /* border: solid red 1px; */
+    display: flex;
+    color: white;
+    border-radius: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+    justify-content: space-evenly;
+    height: 5.5vh;
+    background-color: #6a4adf;
+    }
+    .setting_card  .close p
+    {
+      margin-left: 14vw;
+      margin-right: 10vw;
+      font-size: 20px;
+      margin-top: 10px;
+    }
+    .setting_card  .close svg
+    {
+      /* margin-left: 4.5vw; */
+      background-color: white;
+      border-radius: 100px;
+      padding: 4px;
+    }
+    .setting_card  .close button  
+  {
+    margin-top: 10px;
+    margin-right: 10px;
+    height: 40px;
+    width: 40px;
+    border-radius: 100px;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    padding: 0;
+  }
+  .setting_card  .close button svg:hover
+  {
+    transform: scale(1.2);
+  }
+  .settings-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    /* border: solid reds 1px; */
+    width: 80%;
+}
+
+.settings-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #f4f4f4;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.settings-item:hover {
+    background-color: #eaeaea;
+}
+
+.settings-item span {
+    font-size: 1.2rem;
+}
+
+.settings-item button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #6a4adf;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100px;
+    transition: background-color 0.3s ease;
+}
+
+.settings-item button:hover {
+    background-color: #5a3bcc;
+}
+#Delete
+{
+    color: red;
+    margin-bottom: 20px;
+}
+#Delete button
+{
+    background-color: red;
+    color: white;
+}
+
+/* Resposiveness */
+@media(max-width: 1939px) {
+  .Req .btns
+  {
+    /* border: solid red 1px; */
+    width: 100%;
+  }
+  .Req button
+  {
+    width: 48%  ;
+  }
+  .Req button:nth-child(1)
+  {
+    background-color: lightgreen;
+    margin-left: 1px;
+  }
+  .part2 .two #Noti p:nth-child(1)
+  {
+    /* border: solid white 10px; */
+    width: 18px;
+    height: 18px;
+    font-size: 12px;
+    background-color: red;
+    color: white;
+    border-radius: 100px;
+    z-index: 1;
+    top:33.5vh;
+    left: 6.4vw;
+    position: absolute;
+  }
+}
+@media(max-width:2000px)
+{
+  .comments .CP1 img
+  {
+    height: 30px;
+    width: 30px;
+    margin: 0;
+    position: absolute;
+    object-fit: cover;
+    /* border: solid red 1px; */
+    border-radius: 100px;
+  }
+  .comments .CP1 img:nth-child(1)
+  {
+    left: 10px;
+  }
+  .comments .CP1 img:nth-child(2)
+  {
+    left: 30px;
+  }
+  
+  .comments .CP1 img:nth-child(3)
+  {
+    left: 50px;
+  }
+  .CP1
+  {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+  }
+  .part2 .two #Noti p:nth-child(1)
+  {
+    width: 18px;
+    height: 18px;
+    font-size: 12px;
+    background-color: red;
+    color: white;
+    border-radius: 100px;
+    z-index: 1;
+    top:36vh;
+        left: 6vw;
+    position: absolute;
+  }
+  .box2 .add .P2 button {
+    /* border: solid red 10px; */
+    background-color: #6a4adf;
+    color: white; 
+    border: none;
+    width: 100px;
+    height: 40px;
+    border-radius: 100px;
+    margin-right: 0px;
+    position: relative;
+    right: 20px;
+}
+.msgin svg {
+  position: absolute;
+  right: 24vw;
+}
+}
+@media(max-width:1200px)
+{
+  .msgin svg {
+    position: absolute;
+    right: 22vw;
+  }
+  .box3 .headings {
+    border-bottom: solid #efeff1 5px;
+    /* border: solid red 1px; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2vh;
+    /* margin-left:15px; */
+    position: relative;
+    right: 20px;
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+.part2 .two #Noti p:nth-child(1)
+{
+  left: 8vw;
+  top: 41vh;
+}
+.box2 .add .P2 button {
+  background-color: #6a4adf;
+  color: white;
+  border: none;
+  width: 100px;
+  height: 40px;
+  border-radius: 100px;
+  margin-right: 0px;
+  position: relative;
+  right: 30px;
+}
+.Req
+{
+  position: relative;
+  width: 95%;
+  /* border: solid red 1px; */
+  margin-bottom: 10px;
+  /* font-size: 0px; */
+  /* margin: 0; */
+}
+}
+@media(max-width:1150px)
+{
+  
+  .msgin svg {
+    position: absolute;
+    right: 22vw;
+  }
+.box2 .add .P2 button {
+  background-color: #6a4adf;
+  color: white;
+  border: none;
+  width: 100px;
+  height: 40px;
+  border-radius: 100px;
+  margin-right: 0px;
+  position: relative;
+  right: 30px;
+}
+.Req
+{
+  position: relative;
+  
+  width: 92%;
+  margin-bottom: 20px;
+}
+.detail p:nth-child(1)
+{
+  font-size: 13px;
+}
+.detail p:nth-child(2)
+{
+  font-size: 10px;
+}
+}
+@media (max-width:1063px)
+{
+  .box3 .chats
+  {
+      display: flex;
+      height: 50vh;
+      flex-direction: column;
+      /* align-items: center; */
+      overflow-y: scroll;
+      
+      width: 95%;
+      /* border: solid red 1px; */
+  }
+  .box3 .messages
+  {
+    /* border: solid red 1px; */
+    /* height: 50%; */
+    width: 85%;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: white;
+  }
+  .box3 .headings
+  {
+    border-bottom: solid #efeff1 5px;
+    /* border: solid red 1px; */
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 2vh;
+    margin-left: 20px;
+    margin-top: 20px;
+    padding-bottom: 10px;
+  }
+  .box3 .headings p
+  {
+    font-size: 14px;
+  }
+  .Req
+{
+  position: relative;
+  /* border: solid red 1px; */
+  width: 88%;
+  margin-bottom: 20px;
+}
+}
+@media (max-width:768px)
+{
+  #logo {                    
+    font-size: 30px;
+  }
+  .Create {
+    /* border: solid red 1px; */
+    width: 20vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .Create #btn {
+    width: 8vw;
+    /* border: solid red 1px; */
+    height: 4vh;
+    border-radius: 100px;
+    border: none;
+    background-color: #6a4adf;
+    color: white;
+  }
+  #profile {
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    margin: 0;
+    border-radius: 100px;
+    overflow: hidden;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #profile img {
+    
+    object-fit: cover;
+    height: 100px;
+    width: 100px;
+  }
+  .part2 .box1 .onep
+  {
+    display: none;
+  }
+  .part2 .box1 .two .box p
+  {
+    display: none;
+  }
+  .part2 .box1 .two
+  {
+  border: solid black 1px;
+  background-color: white;
+  width: 100px;
+  height: max-content;
+  width: max-content;
+  display: flex;
+  position: absolute;
+  z-index: 100;
+  /* position: relative; */
+  top: 93.5vh;
+  left: 30vw;
+  /* height: 40px; */
+  }
+  .part2 .box1 .two .box
+  {
+    /* border: solid red 1px; */
+    /* margin-top: 20px; */
+    background-color: white;
+    color: black;
+    align-items: center;
+    position: relative;
+    width: max-content;
+    /* height: 7vh; */
+  }
+  .box2
+  {
+      /* border: solid red 1px; */
+      width: 70%;
+      position: relative;
+      right: 220px;
+      /* position: absolute; */
+      top: 2vh;
+      overflow-y: scroll;
+      overflow-x: hidden;
+  }
+  .box2 .story 
+  {
+    /* border: solid red 1px; */
+    position: relative;
+    top: 10px;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+  }
+  .box2 .story .sbox {
+    width: 16%;
+    height: 100%;
+    /* margin-top: 10px; */
+    margin-left: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    flex-shrink: 0;
+    }
+    .box3
+    {
+        /* border: solid red 1px; */
+        width: 30%; 
+        position: absolute;
+        right: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+    .box3 .messages
+    {
+      /* border: solid red 1px; */
+      height: 40vh;
+      width: 90%;
+      margin-top: 20px;
+      border-radius: 10px;
+      background-color: white;
+    }
+    .Requests
+{
+  height: 40vh;
+  width: 90%;
+  overflow-y: scroll;
+  /* border: so lid red 1px; */
+}
+.Req
+{
+  /* border: solid red 1px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: max-content;
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background-color: white;
+}
+.Requests .oned
+  {
+      /* border: solid red 1px; */
+      width: 80%;
+      /* margin-top: 30px; */
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      background-color: white;
+      /* padding: 10px; */
+  }
+  .Requests .oned img
+  {
+    /* border: solid red 1px; */
+    height: 40px;
+    width: 40px;
+    margin: 0;
+    margin-right: 5px;
+  }
+  .Requests .oned p:nth-child(1)
+  {
+    /* border: solid red 1px; */
+    font-size: 12px;
+  }
+  .Requests .oned p:nth-child(2)
+  {
+    /* border: solid red 1px; */
+    font-size: 10px;
+  }
+}
+@media (max-width:425px)
+{
+  .nav .input-container input {
+    background-color: rgb(240, 238, 245);
+    border-radius: 25px;
+    width: 20vw;
+    height: 5vh;
+    border: none;
+    padding: 0 10px 0 40px; /* Add left padding for space after the SVG */
+    font-size: 16px;
+    border-radius: 100px;
+  }
+  .comments .CP1 img
+  {
+    height: 20px;
+    width: 20px;
+    margin: 0;
+    position: absolute;
+    object-fit: cover;
+    /* border: solid red 1px; */
+    border-radius: 100px;
+  }
+  .comments .CP1 img:nth-child(1)
+  {
+    left: 0px;
+  }
+  .comments .CP1 img:nth-child(2)
+  {
+    left: 10px;
+  }
+  
+  .comments .CP1 img:nth-child(3)
+  {
+    left: 20px;
+  }
+  #logo {                    
+    font-size: 20px;
+  }
+  .Create {
+    /* border: solid red 1px; */
+    width: 30vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .Create #btn {
+    width: 13vw;
+    /* border: solid red 1px; */
+    height: 4vh;
+    border-radius: 100px;
+    border: none;
+    background-color: #6a4adf;
+    color: white;
+  }
+  #profile {
+    height: 40px;
+    width: 40px;
+    padding: 0;
+    margin: 0;
+    border-radius: 100px;
+    overflow: hidden;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #profile img {
+    
+    object-fit: cover;
+    height: 30px;
+    width: 30px;
+  }
+  .part2 .box1 .onep
+  {
+    display: none;
+  }
+  .part2 .box1 .two .box p
+  {
+    display: none;
+  }
+  .part2 .box1 .two
+  {
+  border: solid black 1px;
+  background-color: white;
+  width: 100px;
+  height: max-content;
+  width: max-content;
+  display: flex;
+  position: absolute;
+  z-index: 100;
+  /* position: relative; */
+  top: 93.5vh;
+  left: 20vw;
+  /* height: 40px; */
+  }
+  .part2 .box1 .two .box
+  {
+    /* border: solid red 1px; */
+    /* margin-top: 20px; */
+    background-color: white;
+    color: black;
+    align-items: center;
+    position: relative;
+    width: max-content;
+    /* height: 7vh; */
+  }
+  .box1
+  {
+    position: absolute;
+    top: -1px;
+    right: 350px;
+    z-index: 100;
+  }
+  .box2
+  {
+      /* border: solid red 1px; */
+      width: 200vw;
+      position: relative;
+      /* right: 10%; */
+      /* right: 120px; */
+      right: 0;
+      /* width: 120vw; */
+      /* position: absolute; */
+      top: 2vh;
+      overflow-y: scroll;
+      overflow-x: hidden;
+  }
+  .box2 .story 
+  {
+    /* border: solid red 1px; */
+    position: relative;
+    top: 10px;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+  }
+  .box2 .story .sbox {
+    width: 100px;
+    height: 100%;
+    /* margin-top: 10px; */
+    margin-left: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    flex-shrink: 0;
+    }
+    .box3
+    {
+      /* border: solid red 1px; */
+      width: 30%; 
+      position: absolute;
+      right: 0px;
+      display: flex;
+      display: none;
+        flex-direction: column;
+    }
+    .box3 .messages
+    {
+      /* border: solid red 1px; */
+      height: 40vh;
+      width: 90%;
+      margin-top: 20px;
+      border-radius: 10px;
+      background-color: white;
+    }
+    .Requests
+{
+  height: 40vh;
+  width: 90%;
+  overflow-y: scroll;
+  /* border: so lid red 1px; */
+}
+.Req
+{
+  /* border: solid red 1px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: max-content;
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background-color: white;
+}
+.Requests .oned
+  {
+      /* border: solid red 1px; */
+      width: 80%;
+      /* margin-top: 30px; */
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      background-color: white;
+      /* padding: 10px; */
+  }
+  .Requests .oned img
+  {
+    /* border: solid red 1px; */
+    height: 40px;
+    width: 40px;
+    margin: 0;
+    margin-right: 5px;
+  }
+}

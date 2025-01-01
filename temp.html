@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Masonry Image Gallery</title>
+</head>
+<style>
+    body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.masonry {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-auto-rows: 10px; /* Base row height */
+  gap: 16px;
+  padding: 16px;
+}
+
+.masonry-item {
+  display: block;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.masonry-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.masonry-item:nth-child(2n) {
+  grid-row: span 30; /* Adjusts height for variety */
+}
+
+.masonry-item:nth-child(3n) {
+  grid-row: span 20;
+}
+
+.masonry-item:nth-child(5n) {
+  grid-row: span 40;
+}
+
+.masonry-item:nth-child(7n) {
+  grid-row: span 35;
+}
+
+</style>
+<body>
+  <div class="masonry">
+    <div class="masonry-item"><img src="/exploreimages/i1.jpg" alt="Image 1"></div>
+    <div class="masonry-item"><img src="/exploreimages/i2.jpg" alt="Image 2"></div>
+    <div class="masonry-item"><img src="/exploreimages/i3.jpg" alt="Image 3"></div>
+    <div class="masonry-item"><img src="/exploreimages/i4.jpg" alt="Image 4"></div>
+    <div class="masonry-item"><img src="/exploreimages/i5.jpg" alt="Image 5"></div>
+    <div class="masonry-item"><img src="/exploreimages/i6.jpg" alt="Image 6"></div>
+    <div class="masonry-item"><img src="/exploreimages/i7.jpg" alt="Image 7"></div>
+    <div class="masonry-item"><img src="/exploreimages/i8.jpg" alt="Image 8"></div>
+    <div class="masonry-item"><img src="/exploreimages/i9.jpg" alt="Image 9"></div>
+    <div class="masonry-item"><img src="/exploreimages/i10.jpg" alt="Image 10"></div>
+    <div class="masonry-item"><img src="/exploreimages/i11.jpg" alt="Image 11"></div>
+    <div class="masonry-item"><img src="/exploreimages/i12.jpg" alt="Image 12"></div>
+    <div class="masonry-item"><img src="/exploreimages/i13.jpg" alt="Image 13"></div>
+    <div class="masonry-item"><img src="/exploreimages/i14.jpg" alt="Image 14"></div>
+    <div class="masonry-item"><img src="/exploreimages/i15.jpg" alt="Image 15"></div>
+    <div class="masonry-item"><img src="/exploreimages/i16.jpg" alt="Image 16"></div>
+    <div class="masonry-item"><img src="/exploreimages/i17.jpg" alt="Image 17"></div>
+    <div class="masonry-item"><img src="/exploreimages/i18.jpg" alt="Image 18"></div>
+    <div class="masonry-item"><img src="/exploreimages/i19.jpg" alt="Image 19"></div>
+    <div class="masonry-item"><img src="/exploreimages/i20.jpg" alt="Image 20"></div>
+  </div>
+</body>
+</html>

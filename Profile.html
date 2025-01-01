@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeSocial</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+
+        header {
+            background: rgb(255,255,255);
+            background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(106,74,223,1) 100%);
+            padding: 5px;
+            display: flex;
+            height: 70px;
+        }
+
+        .logo {
+            margin-top: 25px;
+            margin-left: 30px;
+            font-size: 30px;
+            font-weight: bold;
+            color: #333;
+        }
+        .nav {
+            display: flex;
+            justify-content: right;
+            padding: 20px;
+            width: 100%;
+        }
+
+        .nav-icons {
+            margin-left: 15px;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .nav img {
+            text-decoration: none;
+            color: #555;
+            font-size: 1rem;
+        }
+
+        .nav img:hover {
+            color: #000;
+            height: 50px;
+            width: 50px;
+            transition: ease 0.5s;
+        }
+
+        .profile {
+            /* border: solid red 1px; */
+            margin-top: 20px;
+            margin-bottom: 20px;
+            display: flex;
+            margin-left: 50px;
+        }
+
+        .bio {
+            font-weight: 500;
+            font-size: 1.3rem;
+            ;
+        }
+
+        .profile img {
+            border-radius: 10%;
+            width: 300px;
+            height: 300px;
+            border: 4px solid #fff;
+            object-fit: cover;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .about {
+            margin-top: 80px;
+            margin-left: 50px;
+            width: 50%;
+        }
+
+        .profile h1 {
+            margin: 10px 0 5px;
+            font-size: 2.8rem;
+            color: #333;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 10px;
+            margin: 20px 0;
+        }
+
+        .buttons button {
+            /* padding: 10px; */
+            font-size: 1rem;
+            border: none;
+            width: 100px;
+            height: 30px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .buttons .follow {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            
+        }
+
+        .buttons .follow:hover {
+            background-color: #0056b3;
+        }
+
+        .buttons .message {
+            background-color: #6c757d;
+            color: #fff;
+        }
+
+        .buttons .message:hover {
+            background-color: #5a6268;
+        }
+
+        .stats {
+            display: flex;
+            align-items: center;
+            gap: 80px;
+            margin: 20px 0;
+        }
+
+        .stats div {
+            width: 100%;
+            align-content: right;
+            text-align: center;
+            margin-right: 50px;
+        }
+
+        .stats div h2 {
+            margin: 0;
+            font-size: 4.0rem;
+            font-weight: 400;
+            color: #333;
+        }
+
+        .stats div p {
+            margin: 0;
+            color: #777;
+            font-size: 1.5rem;
+
+        }
+        .post {
+        /* border: solid red 1px; */
+        display: grid;
+        width: 80vw;
+        grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+        gap: 16px; /* Spacing between rows and columns */
+}
+
+        .post img
+        {
+            /* border: solid red 1px; */
+            height: 50vh;
+            width: 20vw;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        #logolink
+        {
+            text-decoration: none;
+        }
+        .Pro
+        {
+            /* border: solid red 1px; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            left: 36vw;
+            top: 10px;
+        }
+        .Pro p
+        {
+            /* border: solid red 1px; */
+            height: max-content;
+            padding: none;
+            font-size: 50px;
+        }
+</style>
+</head>
+
+<body>
+    <header>
+       <a href="Home.html" id="logolink"> <div class="logo">BeSocial</div></a>
+       <div class="Pro"><p>Profile</p></div>
+    </header>
+    <div>
+        <div class="profile">
+            <img src="profile.jpg" alt="Profile Picture">
+            <div class="about">
+                <h1 id="Name">Aquib Ali</h1>
+                <p class="bio">Cinephile <br> Selenophile <br>Ex-APSIAN <br>CSE</p>
+                <div class="buttons">
+                    <button class="follow" id="Fbtn" onclick="Change()">Follow</button>
+                    <button class="message">Message</button>
+                </div>
+            </div>
+            <div class="stats">
+                <div>
+                    <p>Followers</p>
+                    <h2>50,124</h2>
+                </div>
+                <div>
+                    <p>Following</p>
+                    <h2>1,234</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <center>
+        <div class="post">
+            <img src="exploreimages/i1.jpg" alt="post" class="post-preview">
+            <img src="exploreimages/i2.jpg" alt="post" class="post-preview">
+            <img src="exploreimages/i3.jpg" alt="post" class="post-preview">
+            <img src="exploreimages/i4.jpg" alt="post" class="post-preview">
+            <img src="exploreimages/i5.jpg" alt="post" class="post-preview">
+            <img src="exploreimages/i6.jpg" alt="post" class="post-preview">
+            <img src="exploreimages/i7.jpg" alt="post" class="post-preview">
+            <img src="exploreimages/i8.jpg" alt="post" class="post-preview">
+            <img src="exploreimages/i9.jpg" alt="post" class="post-preview">
+        </div>
+    </center>
+</body>
+<script>
+    const Change=()=>{
+         let Fbtn=document.getElementById('Fbtn')
+         if(Fbtn.innerText=='Following')
+         {
+             Fbtn.innerText="Follow"
+             Fbtn.style.backgroundColor='#007bff'
+            }
+            else
+            {
+                Fbtn.innerText="Following"
+                Fbtn.style.backgroundColor='green'
+         }
+    }
+    const getdetails=()=>{
+        let key1=localStorage.getItem('Current')
+        details=[localStorage.getItem(key1)]
+        details=JSON.parse(details[0])
+        let name=document.getElementById('Name')
+        name.innerText=details.firstname+" "+details.lastname
+    }
+    window.onload=getdetails;
+</script>
+</html>
